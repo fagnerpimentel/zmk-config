@@ -44,7 +44,7 @@
 &trans  &kp APOS       &kp LS(APOSTROPHE)  &kp LS(LEFT_BRACE)  &kp LEFT_BRACE    &kp RA(E)           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC              &trans
 &trans  &kp GRAVE      &kp LS(NUMBER_3)    &kp LS(NUMBER_5)    &kp LS(NUMBER_4)  &kp LS(MINUS)       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET               &trans
 &trans  &kp LS(GRAVE)  &kp LS(NUMBER_2)    &kp LS(BACKSLASH)   &kp LS(NUMBER_7)  &kp RA(NUMBER_6)    &trans    &trans     &trans     &trans     &kp NON_US_BACKSLASH  &trans
-                                           &studio_unlock      &trans            &trans              &trans    &trans     &mo 3
+                                           &studio_unlock      &hold_tap 0 0     &trans              &trans    &trans     &mo 3
             >;
         };
 
