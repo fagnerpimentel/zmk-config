@@ -32,19 +32,19 @@
             //                    | GUI | LWR | SPC |   | ENT | RSE  | ALT |
 
             bindings = <
-&none  &kp Q             &kp W  &kp E           &kp R         &kp T        &kp Y           &kp U                    &kp I                          &kp O    &kp P                &none
-&none  &mt LEFT_SHIFT A  &kp S  &kp D           &kp F         &kp G        &kp H           &kp J                    &kp K                          &kp L    &mt LEFT_SHIFT SEMI  &none
-&none  &kp Z             &kp X  &kp C           &kp V         &kp B        &kp N           &kp M                    &kp COMMA                      &kp DOT  &kp FSLH             &none
-                                &studio_unlock  &kp LEFT_GUI  &lt 2 TAB    &studio_unlock  &mt LEFT_CONTROL ESCAPE  &mt LEFT_ALT NON_US_BACKSLASH
+&none  &kp Q             &kp W  &kp E         &kp R         &kp T        &kp Y        &kp U                 &kp I      &kp O    &kp P                &none
+&none  &mt LEFT_SHIFT A  &kp S  &kp D         &kp F         &kp G        &kp H        &kp J                 &kp K      &kp L    &mt LEFT_SHIFT SEMI  &none
+&none  &kp Z             &kp X  &kp C         &kp V         &kp B        &kp N        &kp M                 &kp COMMA  &kp DOT  &kp FSLH             &none
+                                &kp LEFT_GUI  &kp LEFT_ALT  &lt 2 TAB    &lt 1 SPACE  &mt LEFT_CONTROL ESC  &kp A
             >;
         };
 
         control {
             bindings = <
-&trans  &kp APOS       &kp LS(APOSTROPHE)  &kp LS(LEFT_BRACE)  &kp LEFT_BRACE    &kp RA(E)           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
-&trans  &kp GRAVE      &kp LS(NUMBER_3)    &kp LS(NUMBER_5)    &kp LS(NUMBER_4)  &kp LS(MINUS)       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
-&trans  &kp LS(GRAVE)  &kp LS(NUMBER_2)    &kp LS(BACKSLASH)   &kp LS(NUMBER_7)  &kp RA(NUMBER_6)    &trans    &trans     &trans     &trans     &trans    &trans
-                                           &trans              &trans            &trans              &trans    &trans     &mo 3
+&trans  &kp APOS       &kp LS(APOSTROPHE)  &kp LS(LEFT_BRACE)  &kp LEFT_BRACE    &kp RA(E)           &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC              &trans
+&trans  &kp GRAVE      &kp LS(NUMBER_3)    &kp LS(NUMBER_5)    &kp LS(NUMBER_4)  &kp LS(MINUS)       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET               &trans
+&trans  &kp LS(GRAVE)  &kp LS(NUMBER_2)    &kp LS(BACKSLASH)   &kp LS(NUMBER_7)  &kp RA(NUMBER_6)    &trans    &trans     &trans     &trans     &kp NON_US_BACKSLASH  &trans
+                                           &studio_unlock      &trans            &trans              &trans    &trans     &mo 3
             >;
         };
 
