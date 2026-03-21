@@ -1,3 +1,15 @@
-&oled {
+/ {
+    chosen {
+        zmk,display = &display0;
+    };
+};
+
+&i2c0 {
     status = "okay";
+
+    display0: ssd1306@3c {
+        compatible = "solomon,ssd1306fb";
+        reg = <0x3c>;
+        label = "DISPLAY";
+    };
 };
