@@ -1,0 +1,3 @@
+&display0 {
+    status = "okay";
+};
