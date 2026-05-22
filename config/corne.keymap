@@ -46,18 +46,18 @@
 
         SIMBOLS_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kt LS(GRAVE)  &kt LS(N6)  &kp GRAVE    &kt APOSTROPHE  &kt SINGLE_QUOTE   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp QUESTION   &kp HASH    &kp PERCENT  &kp DOLLAR      &kp DOUBLE_QUOTES  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp EXCL       &kp AT      &kt PIPE     &kp AMPERSAND   &kt UNDER          &trans
-                        &trans  &trans  &trans    &trans         &trans      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE     &kp CARET  &kp APOSTROPHE  &kp GRAVE      &kp SINGLE_QUOTE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp QUESTION  &kp HASH   &kp PERCENT     &kp DOLLAR     &kp DOUBLE_QUOTES  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EXCL      &kp AT     &kp PIPE        &kp AMPERSAND  &kp UNDER          &trans
+                        &trans  &trans  &trans    &trans        &trans     &trans
             >;
         };
 
         SIMBOLS_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kt LEFT_BRACE   &kp LEFT_BRACKET   &kt LEFT_PARENTHESIS   &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kt RIGHT_BRACE  &kt RIGHT_BRACKET  &kt RIGHT_PARENTHESIS  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kt PLUS  &kp MINUS        &kp ASTRK          &kp SLASH              &kp BACKSLASH  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS  &kp MINUS        &kp ASTRK          &kp SLASH              &kp BACKSLASH  &trans
                         &trans  &trans  &trans    &trans    &trans           &trans
             >;
         };
