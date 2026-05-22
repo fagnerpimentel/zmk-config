@@ -46,10 +46,10 @@
 
         SIMBOLS_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &none     &none        &kp GRAVE      &kt CARET          &kt TILDE         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HASH  &kp PERCENT  &kp DOLLAR     &kp DOUBLE_QUOTES  &kp SINGLE_QUOTE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp AT    &kp PIPE     &kt AMPERSAND  &kp EXCL           &kp QUESTION      &trans
-                        &trans  &trans  &trans    &trans    &trans       &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kt LS(GRAVE)  &kt LS(N6)  &kp GRAVE    &kt APOSTROPHE  &kt SINGLE_QUOTE   &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp QUESTION   &kp HASH    &kp PERCENT  &kp DOLLAR      &kp DOUBLE_QUOTES  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp EXCL       &kp AT      &kt PIPE     &kp AMPERSAND   &kt UNDER          &trans
+                        &trans  &trans  &trans    &trans         &trans      &trans
             >;
         };
 
