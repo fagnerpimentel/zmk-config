@@ -14,6 +14,50 @@
 };
 
 / {
+    macros {
+        Tilde: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(SPACE)>;
+            label = "NEW_MACRO";
+        };
+
+        Tilde_A: Tilde_E {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(A)>;
+            label = "TILDE_E";
+        };
+
+        Tilde_E: new_macro {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(E)>;
+            label = "NEW_MACRO";
+        };
+
+        Tilde_I: Tilde_I {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(I)>;
+            label = "TILDE_I";
+        };
+
+        Tilde_O: Tilde_U {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(O)>;
+            label = "TILDE_U";
+        };
+
+        Tilde_U: Tilde_U {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(O)>;
+            label = "TILDE_U";
+        };
+    };
+
     keymap {
         compatible = "zmk,keymap";
 
@@ -28,28 +72,28 @@
 
         control {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &trans     &trans     &trans     &trans    &trans
-                        &trans  &trans  &trans    &trans    &trans     &mo 5
+&trans  &mo 3   &mo 4   &trans  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
+&trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
+&trans  &trans  &trans  &trans  &trans                &trans               &trans    &trans     &trans     &trans     &trans    &trans
+                        &trans  &trans                &trans               &trans    &trans     &mo 5
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0    &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &kp DOT   &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &trans        &kp N4  &kp N5  &kp N6  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp NUMBER_0  &kp N1  &kp N2  &kp N3  &trans  &trans
+                        &trans  &trans  &trans    &trans        &trans  &trans
             >;
         };
 
         SIMBOLS_1 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp TILDE     &kp CARET  &kp APOSTROPHE  &kp GRAVE      &kp SINGLE_QUOTE   &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp QUESTION  &kp HASH   &kp PERCENT     &kp DOLLAR     &kp DOUBLE_QUOTES  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp EXCL      &kp AT     &kp PIPE        &kp AMPERSAND  &kp UNDER          &trans
-                        &trans  &trans  &trans    &trans        &trans     &trans
+&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_U    &Tilde        &kp CARET  &kp APOSTROPHE  &kp GRAVE      &kp SINGLE_QUOTE   &trans
+&trans  &trans    &trans    &trans    &trans    &trans      &kp QUESTION  &kp HASH   &kp PERCENT     &kp DOLLAR     &kp DOUBLE_QUOTES  &trans
+&trans  &trans    &trans    &trans    &trans    &trans      &kp EXCL      &kp AT     &kp PIPE        &kp AMPERSAND  &kp UNDER          &trans
+                            &trans    &trans    &trans      &trans        &trans     &trans
             >;
         };
 
