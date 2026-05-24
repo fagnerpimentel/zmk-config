@@ -15,25 +15,25 @@
 
 / {
     macros {
-        Tilde: new_macro {
+        Tilde: Tilde {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(SPACE)>;
-            label = "NEW_MACRO";
+            label = "TILDE";
         };
 
-        Tilde_A: Tilde_E {
+        Tilde_A: Tilde_A {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(A)>;
-            label = "TILDE_E";
+            label = "TILDE_A";
         };
 
-        Tilde_E: new_macro {
+        Tilde_E: Tilde_E {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(E)>;
-            label = "NEW_MACRO";
+            label = "TILDE_E";
         };
 
         Tilde_I: Tilde_I {
@@ -43,11 +43,11 @@
             label = "TILDE_I";
         };
 
-        Tilde_O: Tilde_U {
+        Tilde_O: Tilde_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(O)>;
-            label = "TILDE_U";
+            label = "TILDE_O";
         };
 
         Tilde_U: Tilde_U {
@@ -90,7 +90,7 @@
 
         SIMBOLS_1 {
             bindings = <
-&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_U    &Tilde        &kp CARET  &kp APOSTROPHE  &kp GRAVE      &kp SINGLE_QUOTE   &trans
+&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_O    &Tilde        &kp CARET  &kp APOSTROPHE  &kp GRAVE      &kp SINGLE_QUOTE   &trans
 &trans  &trans    &trans    &trans    &trans    &trans      &kp QUESTION  &kp HASH   &kp PERCENT     &kp DOLLAR     &kp DOUBLE_QUOTES  &trans
 &trans  &trans    &trans    &trans    &trans    &trans      &kp EXCL      &kp AT     &kp PIPE        &kp AMPERSAND  &kp UNDER          &trans
                             &trans    &trans    &trans      &trans        &trans     &trans
