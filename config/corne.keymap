@@ -29,32 +29,11 @@
             label = "TILDE_A";
         };
 
-        Tilde_E: Tilde_E {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TILDE &kp LS(E)>;
-            label = "TILDE_E";
-        };
-
-        Tilde_I: Tilde_I {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TILDE &kp LS(I)>;
-            label = "TILDE_I";
-        };
-
         Tilde_O: Tilde_O {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp TILDE &kp LS(O)>;
             label = "TILDE_O";
-        };
-
-        Tilde_U: Tilde_U {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp TILDE &kp LS(O)>;
-            label = "TILDE_U";
         };
 
         Caret: Caret {
@@ -116,7 +95,7 @@
         Acute_E: Acute_E {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp APOSTROPHE &kp LS(END)>;
+            bindings = <&kp APOSTROPHE &kp LS(E)>;
             label = "ACUTE_E";
         };
 
@@ -154,6 +133,118 @@
             bindings = <&kp DOUBLE_QUOTES &kp SPACE>;
             label = "QUOTES";
         };
+
+        CEDILLA: CEDILLA {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp LS(C)>;
+            label = "CEDILLA";
+        };
+
+        Tilde_N: Tilde_N {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp LS(N)>;
+            label = "TILDE_N";
+        };
+
+        Cedilla: Cedilla {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOS &kp C>;
+            label = "CEDILLA";
+        };
+
+        Tilde_n: Tilde_n {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp N>;
+            label = "TILDE_N";
+        };
+
+        Tilde_a: Tilde_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp A>;
+            label = "TILDE_A";
+        };
+
+        Tilde_o: Tilde_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp TILDE &kp O>;
+            label = "TILDE_O";
+        };
+
+        Caret_a: Caret_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp A>;
+            label = "CARET_A";
+        };
+
+        Caret_e: Caret_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp E>;
+            label = "CARET_E";
+        };
+
+        Caret_i: Caret_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp I>;
+            label = "CARET_I";
+        };
+
+        Caret_o: Caret_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp O>;
+            label = "CARET_O";
+        };
+
+        Caret_u: Caret_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp CARET &kp U>;
+            label = "CARET_U";
+        };
+
+        Acute_a: Acute_a {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp A>;
+            label = "ACUTE_A";
+        };
+
+        Acute_e: Acute_e {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp E>;
+            label = "ACUTE_E";
+        };
+
+        Acute_i: Acute_i {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp I>;
+            label = "ACUTE_I";
+        };
+
+        Acute_o: Acute_o {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp O>;
+            label = "ACUTE_O";
+        };
+
+        Acute_u: Acute_u {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp APOSTROPHE &kp U>;
+            label = "ACUTE_U";
+        };
     };
 
     keymap {
@@ -161,7 +252,7 @@
 
         base {
             bindings = <
-&trans  &lt 3 Q           &lt 4 W             &kp E           &kp R           &kp T        &kp Y        &kp U           &kp I           &kp O               &kp P                &trans
+&trans  &lt 3 Q           &lt 4 W             &kp E           &kp R           &kp T        &kp Y        &kp U           &kp I           &lt 4 O             &lt 3 P              &trans
 &trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G        &kp H        &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt LEFT_SHIFT SEMI  &trans
 &trans  &kp Z             &kp X               &kp C           &kp V           &kp B        &kp N        &kp M           &kp COMMA       &kp DOT             &kp FSLH             &trans
                                               &none           &lt 2 TAB       &lt 1 ESC    &lt 1 SPACE  &lt 2 TAB       &none
@@ -188,18 +279,18 @@
 
         SIMBOLS_1 {
             bindings = <
-&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_U    &Tilde  &trans    &Grave       &Acute         &Quotes    &trans
-&trans  &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U    &Acute  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp UNDER  &trans
-&trans  &Caret_A  &Caret_E  &Caret_I  &Caret_O  &Caret_U    &Caret  &kp AT    &kp PIPE     &kp AMPERSAND  &kp EXCL   &trans
-                            &trans    &trans    &trans      &trans  &trans    &trans
+&trans  &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U    &Acute_u  &Acute_o  &Acute_i  &Acute_e  &Acute_a  &trans
+&trans  &Caret_a  &Caret_e  &Caret_i  &Caret_O  &Caret_U    &Caret_u  &Caret_o  &Caret_i  &Caret_e  &Caret_a  &trans
+&trans  &Tilde_A  &Tilde_O  &CEDILLA  &Tilde_N  &trans      &trans    &Tilde_n  &Cedilla  &Tilde_o  &Tilde_a  &trans
+                            &trans    &trans    &trans      &trans    &trans    &trans
             >;
         };
 
         SIMBOLS_2 {
             bindings = <
-&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &Tilde  &kp HASH  &kp PERCENT  &kp DOLLAR     &Quotes    &trans
-&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &Acute  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER  &trans
-&trans  &trans  &trans           &trans             &trans                 &trans    &Caret  &none     &none        &none          &none      &trans
+&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &Acute  &kp HASH  &kp PERCENT  &kp DOLLAR     &Quotes    &trans
+&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &Caret  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER  &trans
+&trans  &trans  &trans           &trans             &trans                 &trans    &Tilde  &none     &none        &none          &none      &trans
                                  &trans             &trans                 &trans    &trans  &trans    &trans
             >;
         };
