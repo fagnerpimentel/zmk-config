@@ -259,6 +259,20 @@
             bindings = <&kp GRAVE &kp A>;
             label = "GRAVE_A_";
         };
+
+        Zoom_in: Zoom_in {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(MINUS)>;
+            label = "ZOOM_IN";
+        };
+
+        Zoom_out: Zoom_out {
+            compatible = "zmk,behavior-macro";
+            #binding-cells = <0>;
+            bindings = <&kp LC(PLUS)>;
+            label = "ZOOM_OUT";
+        };
     };
 
     keymap {
@@ -275,10 +289,10 @@
 
         control {
             bindings = <
-&trans  &sl 3   &sl 4   &trans  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC       &trans
-&trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET        &trans
-&trans  &trans  &trans  &trans  &trans                &trans               &trans    &trans     &trans     &trans     &kp BACKSLASH  &trans
-                        &trans  &trans                &trans               &trans    &trans     &mo 5
+&trans  &sl 3   &sl 4   &Zoom_in   &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC       &trans
+&trans  &trans  &trans  &Zoom_out  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET        &trans
+&trans  &trans  &trans  &trans     &trans                &trans               &trans    &trans     &trans     &trans     &kp BACKSLASH  &trans
+                        &trans     &trans                &trans               &trans    &trans     &mo 5
             >;
         };
 
