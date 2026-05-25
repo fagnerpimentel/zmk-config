@@ -170,37 +170,37 @@
 
         control {
             bindings = <
-&trans  &sl 3   &sl 4   &trans  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
-&trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
-&trans  &trans  &trans  &trans  &trans                &trans               &trans    &trans     &trans     &trans     &trans    &trans
+&trans  &sl 3   &sl 4   &trans  &kp C_BRIGHTNESS_INC  &kp C_VOLUME_UP      &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC       &trans
+&trans  &trans  &trans  &trans  &kp C_BRIGHTNESS_DEC  &kp C_VOLUME_DOWN    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET        &trans
+&trans  &trans  &trans  &trans  &trans                &trans               &trans    &trans     &trans     &trans     &kp BACKSLASH  &trans
                         &trans  &trans                &trans               &trans    &trans     &mo 5
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7  &kp N8  &kp N9  &kp MINUS  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp N0        &kp N4  &kp N5  &kp N6  &kp EQUAL  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp SLASH  &trans
+                        &trans  &trans  &trans    &trans        &trans  &trans
             >;
         };
 
         SIMBOLS_1 {
             bindings = <
-&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_U    &Tilde  &Caret    &Grave       &Acute         &Quotes    &trans
-&trans  &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U    &trans  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp UNDER  &trans
-&trans  &Caret_A  &Caret_E  &Caret_I  &Caret_O  &Caret_U    &trans  &kp AT    &kp PIPE     &kp AMPERSAND  &kp EXCL   &trans
+&trans  &Tilde_A  &Tilde_E  &Tilde_I  &Tilde_O  &Tilde_U    &Tilde  &trans    &Grave       &Acute         &Quotes    &trans
+&trans  &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U    &Acute  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp UNDER  &trans
+&trans  &Caret_A  &Caret_E  &Caret_I  &Caret_O  &Caret_U    &Caret  &kp AT    &kp PIPE     &kp AMPERSAND  &kp EXCL   &trans
                             &trans    &trans    &trans      &trans  &trans    &trans
             >;
         };
 
         SIMBOLS_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS  &kp MINUS        &kp ASTRK          &kp SLASH              &kp BACKSLASH  &trans
-                        &trans  &trans  &trans    &trans    &trans           &trans
+&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &Tilde  &kp HASH  &kp PERCENT  &kp DOLLAR     &Quotes    &trans
+&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &Acute  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER  &trans
+&trans  &trans  &trans           &trans             &trans                 &trans    &Caret  &none     &none        &none          &none      &trans
+                                 &trans             &trans                 &trans    &trans  &trans    &trans
             >;
         };
 
