@@ -280,7 +280,7 @@
 
         base {
             bindings = <
-&trans  &lt 3 Q           &lt 4 W             &kp E           &kp R           &kp T        &kp Y        &kp U           &kp I           &lt 4 O             &lt 3 P              &trans
+&trans  &kp Q             &lt 4 W             &lt 3 E         &kp R           &kp T        &kp Y        &kp U           &lt 3 I         &lt 4 O             &kp P                &trans
 &trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G        &kp H        &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt LEFT_SHIFT SEMI  &trans
 &trans  &kp Z             &kp X               &kp C           &kp V           &kp B        &kp N        &kp M           &kp COMMA       &kp DOT             &kp FSLH             &trans
                                               &none           &lt 2 TAB       &lt 1 ESC    &lt 1 SPACE  &lt 2 TAB       &none
