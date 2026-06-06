@@ -283,7 +283,7 @@
 &trans  &lt 2 Q           &lt 3 W             &lt 4 E         &kp R           &kp T        &kp Y        &kp U           &lt 4 I         &lt 3 O             &lt 2 P              &trans
 &trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G        &kp H        &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt LEFT_SHIFT SEMI  &trans
 &trans  &kp Z             &kp X               &kp C           &kp V           &kp B        &kp N        &kp M           &kp COMMA       &kp DOT             &kp FSLH             &trans
-                                              &none           &lt 2 TAB       &lt 1 ESC    &lt 1 SPACE  &lt 2 TAB       &none
+                                              &none           &lt 2 TAB       &lt 2 ESC    &lt 1 SPACE  &lt 2 TAB       &none
             >;
         };
 
