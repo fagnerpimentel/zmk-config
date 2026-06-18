@@ -307,10 +307,10 @@
 
         SIMBOLS_1 {
             bindings = <
-&trans  &kp QUESTION  &kp HASH  &kp PERCENT  &kp DOLLAR     &trans       &Caret_a_  &Caret_e_  &Caret_i_  &Caret_o_  &Caret_u_  &trans
-&trans  &kp EXCL      &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER    &Acute_a_  &Acute_e_  &Acute_i_  &Acute_o_  &Acute_u_  &trans
-&trans  &Grave        &Caret    &Acute       &Tilde         &Quotes      &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
-                                &trans       &trans         &trans       &trans     &trans     &trans
+&trans  &kp QUESTION  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp BACKSLASH    &Caret_a_  &Caret_e_  &Caret_i_  &Caret_o_  &Caret_u_  &trans
+&trans  &kp EXCL      &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER        &Acute_a_  &Acute_e_  &Acute_i_  &Acute_o_  &Acute_u_  &trans
+&trans  &Grave        &Caret    &Acute       &Tilde         &Quotes          &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
+                                &trans       &trans         &trans           &trans     &trans     &trans
             >;
         };
 
