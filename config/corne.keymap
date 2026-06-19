@@ -316,10 +316,10 @@
 
         SIMBOLS_2 {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &Caret_A  &Caret_E  &Caret_I  &Caret_O  &Caret_U  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &Tilde_A  &Tilde_O  &CEDILLA  &Grave_A  &Tilde_N  &trans
-                        &trans  &trans  &trans    &trans    &trans    &trans
+&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &Caret_A  &Caret_E  &Caret_I  &Caret_O  &Caret_U  &trans
+&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &Acute_A  &Acute_E  &Acute_I  &Acute_O  &Acute_U  &trans
+&trans  &trans  &trans           &trans             &trans                 &trans    &Tilde_A  &Tilde_O  &CEDILLA  &Grave_A  &Tilde_N  &trans
+                                 &trans             &trans                 &trans    &trans    &trans    &trans
             >;
         };
 
