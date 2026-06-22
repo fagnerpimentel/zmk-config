@@ -298,19 +298,19 @@
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7  &kp N8  &kp N9  &kp BACKSPACE  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0         &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &kp EQUAL      &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0  &trans
+&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &trans  &trans
                         &trans  &trans  &trans    &trans        &trans  &trans
             >;
         };
 
         SIMBOLS_1 {
             bindings = <
-&trans  &Acute   &kp HASH  &kp PERCENT  &kp DOLLAR     &kp EQUAL        &Caret_a_  &Caret_e_  &Caret_i_  &Caret_o_  &Caret_u_  &trans
-&trans  &Quotes  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDER        &Acute_a_  &Acute_e_  &Acute_i_  &Acute_o_  &Acute_u_  &trans
-&trans  &Grave   &Caret    &Tilde       &kp EXCL       &kp BACKSLASH    &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
-                           &trans       &trans         &trans           &trans     &trans     &trans
+&trans  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp EQUAL       &kp EXCLAMATION    &Caret_a_  &Caret_e_  &Caret_i_  &Caret_o_  &Caret_u_  &trans
+&trans  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDERSCORE  &kp BACKSLASH      &Acute_a_  &Acute_e_  &Acute_i_  &Acute_o_  &Acute_u_  &trans
+&trans  &Quotes   &Acute       &Grave         &Caret          &Tilde             &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
+                               &trans         &trans          &trans             &trans     &trans     &trans
             >;
         };
 
