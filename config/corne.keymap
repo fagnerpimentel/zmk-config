@@ -280,28 +280,28 @@
 
         base {
             bindings = <
-&trans  &kp Q             &lt 4 W             &lt 3 E         &kp R           &kp T        &kp Y        &kp U           &lt 3 I         &lt 4 O             &kp P                &trans
-&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G        &kp H        &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt LEFT_SHIFT SEMI  &trans
-&trans  &kp Z             &kp X               &kp C           &kp V           &kp B        &kp N        &kp M           &kp COMMA       &kp DOT             &kp FSLH             &trans
-                                              &none           &lt 2 TAB       &lt 2 ESC    &lt 1 SPACE  &lt 2 TAB       &none
+&trans  &lt 2 Q           &lt 3 W             &lt 4 E         &kp R           &kp T      &kp Y        &kp U           &lt 4 I         &lt 3 O             &lt 2 P              &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &kp G      &kp H        &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt LEFT_SHIFT SEMI  &trans
+&trans  &kp Z             &kp X               &kp C           &kp V           &kp B      &kp N        &kp M           &kp COMMA       &kp DOT             &kp FSLH             &trans
+                                              &none           &kp TAB         &kp ESC    &lt 1 SPACE  &kp TAB         &none
             >;
         };
 
         control {
             bindings = <
-&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
-&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
-&trans  &trans  &trans           &trans             &trans                 &trans    &trans    &trans     &trans     &trans     &trans    &trans
-                                 &trans             &trans                 &trans    &trans    &trans     &mo 5
+&trans  &trans  &trans         &trans             &trans             &trans    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
+&trans  &trans  &kp C_BRI_INC  &kp C_AC_ZOOM_IN   &kp C_VOLUME_UP    &trans    &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
+&trans  &trans  &kp C_BRI_DEC  &kp C_AC_ZOOM_OUT  &kp C_VOLUME_DOWN  &trans    &trans    &trans     &trans     &trans     &trans    &trans
+                               &trans             &trans             &trans    &trans    &trans     &mo 5
             >;
         };
 
         numbers {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &kp PLUS      &kp N7  &kp N8  &kp N9  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &kp ASTERISK  &kp N1  &kp N2  &kp N3  &trans  &trans
-                        &trans  &trans  &trans    &trans        &trans  &trans
+&trans  &trans  &kp PLUS         &kp MINUS          &kt ASTERISK           &trans    &trans  &kp N7  &kp N8  &kp N9  &trans  &trans
+&trans  &trans  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &trans    &trans  &kp N4  &kp N5  &kp N6  &kp N0  &trans
+&trans  &trans  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &trans    &trans  &kp N1  &kp N2  &kp N3  &trans  &trans
+                                 &trans             &trans                 &trans    &trans  &trans  &trans
             >;
         };
 
@@ -309,7 +309,7 @@
             bindings = <
 &trans  &kp HASH  &kp PERCENT  &kp DOLLAR     &kp EQUAL       &kp EXCLAMATION    &Caret_a_  &Caret_e_  &Caret_i_  &Caret_o_  &Caret_u_  &trans
 &trans  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDERSCORE  &kp BACKSLASH      &Acute_a_  &Acute_e_  &Acute_i_  &Acute_o_  &Acute_u_  &trans
-&trans  &Quotes   &Acute       &Grave         &Caret          &Tilde             &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
+&trans  &Tilde    &Caret       &Grave         &Acute          &Quotes            &Tilde_a_  &Tilde_o_  &Cedilla_  &Grave_a_  &Tilde_n_  &trans
                                &trans         &trans          &trans             &trans     &trans     &trans
             >;
         };
@@ -325,10 +325,10 @@
 
         CONFIG {
             bindings = <
-&trans  &bootloader   &bt BT_CLR    &kp C_AC_ZOOM_OUT  &kp C_BRI_UP  &kp C_VOL_UP         &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 0  &bt BT_SEL 2  &kp C_AC_ZOOM_IN   &kp C_BRI_DN  &kp C_VOLUME_DOWN    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &bt BT_SEL 1  &bt BT_SEL 3  &trans             &trans        &trans               &trans  &trans  &trans  &trans  &trans  &trans
-                                    &trans             &trans        &trans               &trans  &trans  &trans
+&trans  &bootloader  &bt BT_CLR  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans      &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans       &trans      &trans        &trans        &trans          &trans  &trans  &trans  &trans  &trans  &trans
+                                 &trans        &trans        &trans          &trans  &trans  &trans
             >;
         };
     };
