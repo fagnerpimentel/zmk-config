@@ -289,19 +289,19 @@
 
         control {
             bindings = <
-&trans  &none  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &none     &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
-&trans  &none  &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &none     &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
-&trans  &none  &none            &none              &none                  &none     &none     &none      &none      &none      &none     &trans
-                                &trans             &trans                 &trans    &trans    &trans     &mo 5
+&trans  &kp EXCLAMATION  &kp LEFT_BRACE   &kp LEFT_BRACKET   &kp LEFT_PARENTHESIS   &kp QUESTION    &kp HOME  &kp PG_DN  &kp PG_UP  &kp END    &kp BSPC  &trans
+&trans  &kp BACKSLASH    &kp RIGHT_BRACE  &kp RIGHT_BRACKET  &kp RIGHT_PARENTHESIS  &kp SLASH       &kp LEFT  &kp DOWN   &kp UP     &kp RIGHT  &kp RET   &trans
+&trans  &none            &kp PLUS         &kp MINUS          &kp ASTERISK           &none           &none     &none      &none      &none      &none     &trans
+                                          &trans             &trans                 &trans          &trans    &trans     &mo 5
             >;
         };
 
         numbers {
             bindings = <
-&trans  &kp HASH  &kp PERCENT  &kp DOLLAR     &kt EQUAL       &kp EXCLAMATION    &kp PLUS      &kp N7  &kp N8  &kp N9  &none   &trans
-&trans  &kp AT    &kp PIPE     &kp AMPERSAND  &kp UNDERSCORE  &kp BACKSLASH      &kp MINUS     &kp N4  &kp N5  &kp N6  &kp N0  &trans
-&trans  &Tilde    &Caret       &Grave         &Acute          &Quotes            &kp ASTERISK  &kp N1  &kp N2  &kp N3  &none   &trans
-                               &trans         &trans          &trans             &trans        &trans  &trans
+&trans  &kp HASH   &kp PERCENT  &kp DOLLAR     &kt EQUAL       &none                &none   &kp N7  &kp N8  &kp N9  &none   &trans
+&trans  &kp AT     &kp PIPE     &kp AMPERSAND  &kp UNDERSCORE  &none                &none   &kp N4  &kp N5  &kp N6  &kp N0  &trans
+&trans  &kp TILDE  &kp CARET    &kp GRAVE      &kp APOSTROPHE  &kp DOUBLE_QUOTES    &none   &kp N1  &kp N2  &kp N3  &none   &trans
+                                &trans         &trans          &trans               &trans  &trans  &trans
             >;
         };
 
