@@ -280,9 +280,9 @@
 
         base {
             bindings = <
-&trans  &lt 2 Q           &lt 3 W             &lt 4 E         &kp R           &kp T          &kp Y        &kp U           &lt 4 I         &lt 3 O             &lt 2 P        &trans
-&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &mt GLOBE G    &mt GLOBE H  &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &kp RA(COMMA)  &trans
-&trans  &kp Z             &kp X               &kp C           &kp V           &kp B          &kp N        &kp M           &kp COMMA       &kp DOT             &kp SEMI       &trans
+&trans  &lt 2 Q           &lt 3 W             &lt 4 E         &kp R           &kp T          &kp Y        &kp U           &lt 4 I         &lt 3 O             &lt 2 P                    &trans
+&trans  &mt LEFT_SHIFT A  &mt LEFT_CONTROL S  &mt LEFT_GUI D  &mt LEFT_ALT F  &mt GLOBE G    &mt GLOBE H  &mt LEFT_ALT J  &mt LEFT_GUI K  &mt LEFT_CONTROL L  &mt RIGHT_SHIFT RA(COMMA)  &trans
+&trans  &kp Z             &kp X               &kp C           &kp V           &kp B          &kp N        &kp M           &kp COMMA       &kp DOT             &kp SEMI                   &trans
                                               &none           &caps_word      &kp TAB        &lt 1 SPACE  &kp ESC         &none
             >;
         };
